@@ -1,0 +1,398 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Figtree", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+#main {
+	width: 100%;
+}
+
+/* The backdrop that covers the rest of the content */
+#backdrop {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(42, 39, 39);
+	z-index: 999;
+}
+
+/* Warning message */
+#warning-message {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: rgb(255, 255, 255);
+	padding: 20px;
+	font-weight: 400;
+	font-size: 16px;
+	z-index: 1000;
+	text-align: center;
+	border-radius: 10px;
+}
+
+#warning-message img {
+	width: 100%;
+	height: 100%;
+}
+
+#nav {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 10vw;
+}
+
+#nav a {
+	display: inline-block;
+	font-weight: 600;
+	font-size: 15px;
+	text-decoration: none;
+	color: #000;
+}
+
+#nleft {
+	display: flex;
+	gap: 30px;
+}
+
+#nav #centeratag {
+	font-size: 18px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#hero {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 15vw;
+	padding: 0vw 10vw 10vw 10vw;
+	width: 100%;
+}
+
+#sustain {
+	width: 17vw;
+}
+
+#sustain p {
+	text-transform: capitalize;
+	margin: 10px 0;
+	font-size: 12px;
+}
+
+#sustain #suscontain {
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 24vw;
+}
+
+#suscontain img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#ephemeral {
+	width: 30vw;
+	height: 40vw;
+	position: relative;
+	margin-left: 50px;
+}
+
+#ephemeral #headings {
+	position: absolute;
+	top: -24%;
+	left: -26%;
+	z-index: 10;
+}
+
+#ephemeral #ephemimg {
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+#ephemeral #ephemimg img {
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	object-fit: cover;
+}
+
+#ephemeral h1 {
+	font-size: 6vw;
+	font-weight: 400;
+	letter-spacing: -0.4vw;
+	line-height: 1;
+}
+
+#ephemeral p {
+	font-size: 20px;
+	justify-content: start;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: -0.1;
+	margin-top: 10px;
+}
+
+#visit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+#circlevisit {
+	display: flex;
+	justify-content: center;
+	width: 3vw;
+	height: 3vw;
+	align-items: center;
+	color: #5e5e5e;
+	border-radius: 50%;
+	border: 2px solid #5e5e5e;
+}
+
+#circlevisit h3 {
+	color: #5e5e5e;
+}
+
+#motive {
+	display: flex;
+	flex-direction: column;
+	padding: 3vw 10vw;
+	margin-top: 3vw;
+}
+
+#motive h2 {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 20px;
+	color: #5e5e5e;
+}
+
+#motive h2::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 150px;
+	bottom: 0; /* Position it at the bottom of the paragraph */
+	height: 2px; /* Thickness of the underline */
+	background-color: #5e5e5e; /* Color of the underline */
+}
+
+#motive #motivetext {
+	width: 100%;
+	display: flex;
+	text-align: right;
+	padding-left: 5.5%;
+}
+
+#motive p {
+	font-size: 2vw;
+	line-height: 1.5;
+	letter-spacing: -0.1px;
+}
+
+#motivetext span {
+	/* background: red; */
+	display: inline-block;
+	border-radius: 100px;
+	overflow: hidden;
+	margin: 0 10px;
+	margin-bottom: -12.5px;
+}
+
+#motivetext span img {
+	width: 100%;
+	height: 100%;
+}
+
+#zerospan {
+	width: 120px;
+	height: 60px;
+	background-image: url(/assets/usg.jpg);
+	background-size: cover;
+}
+
+#zerospan:hover {
+	transform: scale(2);
+}
+
+#onespan {
+	width: 120px;
+	height: 60px;
+	background-image: url(/assets/footprint.png);
+	background-size: cover;
+}
+
+#onespan:hover {
+	transform: scale(2);
+}
+
+#twospan {
+	width: 100px;
+	height: 50px;
+	background-image: url(/assets/shaljam.jpg);
+	background-size: cover;
+	background-position: 0 48%;
+}
+
+#twospan:hover {
+	transform: scale(2);
+}
+
+#threespan {
+	width: 80px;
+	height: 50px;
+	background-image: url(/assets/grass.jpg);
+	background-size: cover;
+	background-position: 0 60%;
+}
+
+#threespan:hover {
+	transform: scale(2);
+}
+
+#pictures {
+	margin-top: 1vw;
+	padding: 3vw;
+	padding-left: 14vw;
+	padding-right: 10vw;
+	display: flex;
+	justify-content: space-between;
+}
+
+#synergy {
+	width: 24vw;
+}
+
+#harmoney {
+	width: 30vw;
+	margin-top: 150px;
+	text-align: right;
+}
+
+#synergy #picimg {
+	width: 100%;
+	height: 30vw;
+	margin-bottom: 1vw;
+}
+
+#synergy #picimg img {
+	width: 100%;
+	height: 100%;
+}
+
+#harmoney #picimg img {
+	width: 100%;
+	height: 100%;
+}
+
+#synergy p,
+#harmoney p {
+	font-size: 16px;
+	margin: 10px 0;
+}
+
+#harmoney #picimg {
+	width: 100%;
+	height: 40vw;
+	margin-bottom: 1vw;
+}
+
+#banner {
+	height: 40vw;
+	margin-top: 2vw;
+	padding-right: 10vw;
+	display: flex;
+	gap: 2vw;
+	align-items: center;
+}
+
+#bimg {
+	width: 100%;
+	height: 40vw;
+}
+
+#bimg img {
+	width: 100%;
+	height: 100%;
+}
+
+#banner #btext {
+	width: 35%;
+}
+
+#banner #btext h1 {
+	font-size: 2.8vw;
+	line-height: 1;
+}
+
+#banner #btext p {
+	margin-top: 20px;
+}
+
+#future {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 101vh;
+	background-color: #fff;
+}
+
+#future video {
+	z-index: 1;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+#ftext {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	z-index: 4;
+	color: black;
+}
+
+#ftext button {
+	padding: 0.7vw 1.2vw;
+	font-size: 0.6vw;
+	text-transform: capitalize;
+	margin-top: 10px;
+	font-weight: 800;
+	border-radius: 100px;
+	background-color: #fff;
+	border: 0.5px solid #565656;
+	color: #565656;
+}

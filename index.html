@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div id="main">
+			<!-- Backdrop for the warning message -->
+			<div id="backdrop"></div>
+
+			<!-- Warning Message -->
+			<div id="warning-message">
+				<img src="/assets/sphere.png" alt="" />
+				The screen is too small for optimal viewing experience!
+			</div>
+
+			<div id="nav">
+				<div id="nleft">
+					<a class="navlink" href="#">Home</a>
+					<a class="navlink" href="#">Price</a>
+					<a class="navlink" href="#">Products</a>
+				</div>
+				<a class="navlink" id="centeratag" href="#"><h1>ReGen</h1></a>
+				<div id="nright">
+					<a class="navlink" href="#">Our Journey</a>
+				</div>
+			</div>
+			<div id="hero">
+				<div class="anim2" id="sustain">
+					<h5>01.</h5>
+					<h1>Sustainablity</h1>
+					<p>
+						we integrate sustainable practices with innovative solutions to
+						drive lasting benefits for the environment and future generations.
+					</p>
+					<div class="imageff" id="suscontain">
+						<img src="assets/pinkgreenplant.jpg" alt="pinkgreenplant" />
+					</div>
+				</div>
+				<div class="anim2" id="ephemeral">
+					<div id="headings">
+						<h1>Ephemeral</h1>
+						<h1>Equilibrium.</h1>
+					</div>
+					<div id="ephemimg">
+						<img src="./assets/pinkplant.jpg" alt="" />
+					</div>
+					<p>
+						Commited to sustainability and eco-friendly choices for a better
+						tomorrow
+					</p>
+				</div>
+				<div class="anim2" id="visit">
+					<div id="circlevisit">
+						<i class="ri-arrow-down-line"></i>
+					</div>
+					<h5>visit our galary.</h5>
+				</div>
+			</div>
+			<div id="motive">
+				<h1>Our Motive</h1>
+				<div id="motivetext">
+					<p>
+						At ReGen, we are deeply committed to sustainability.
+						<span class="imgspan" id="zerospan"></span> We believe in a greener,
+						more sustainable future,
+						<span class="imgspan" id="onespan"></span> and it's at the core of
+						everything we do. Our practices are designed with environmental
+						responsibility <span class="imgspan" id="twospan"></span> in mind,
+						from sourcing eco-friendly
+						<span class="imgspan" id="threespan"></span> materials to reducing
+						our carbon footprint.
+					</p>
+				</div>
+			</div>
+			<div id="pictures">
+				<div id="synergy">
+					<div class="imageff" id="picimg">
+						<img src="/assets/ocean.jpg" alt="" />
+					</div>
+					<h1>Synergy</h1>
+					<p>
+						At ReGen, we blend innovation with eco-conscious principles to
+						create a positive impact for both the planet and society.
+					</p>
+				</div>
+				<div id="harmoney">
+					<div class="imageff" id="picimg">
+						<img src="/assets/sea.jpg" alt="" />
+					</div>
+					<h1>Harmoney</h1>
+					<p>
+						we foster a collaborative approach to sustainability, where every
+						decision works in harmony with nature to build a greener tomorrow.
+					</p>
+				</div>
+			</div>
+			<div id="banner">
+				<div id="bimg">
+					<img src="/assets/biodegradable.png" alt="" />
+					<img src="/assets/Tree.jpg" alt="" />
+				</div>
+				<div id="btext">
+					<h1>Biodegradable Packaging</h1>
+					<p>
+						we are proud to use biodegradable packaging, ensuring that our
+						products are as kind to the planet as they are to our customers.
+					</p>
+				</div>
+			</div>
+			<div id="future">
+				<video src="/assets/life.mp4" autoplay muted loop></video>
+				<div id="ftext">
+					<h1>Think of future</h1>
+					<button>join the movement</button>
+				</div>
+			</div>
+		</div>
+		<!--  Gsap is needed for Basic Effects -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+		<!-- Scroll Trigger is needed for Scroll Effects -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+		<!-- Three.js is needed for 3d Effects -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+		<!-- ControlKit is needed for Debug Panel -->
+		<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.js"></script>
+		<script
+			type="text/javascript"
+			src="https://unpkg.com/sheryjs/dist/Shery.js"
+		></script>
+		<script src="script.js"></script>
+	</body>
+</html>
